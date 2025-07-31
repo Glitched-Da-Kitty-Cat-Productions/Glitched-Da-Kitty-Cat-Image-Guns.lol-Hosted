@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{image_id}} - {{website_name}}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="{{description}}" />
+  <meta name="theme-color" content="{{theme_color}}">
+  <meta property="og:title" content="{{image_id}} - {{website_name}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="{{image_direct_url}}" />
+  <link rel="stylesheet" href="static/styling/styles.css" />
+  <link rel="icon" type="image/x-icon" href="{{image_direct_url}}" />
+  <link rel="application/json+oembed" href="https://guns.lol/api/oembed?author_name={{author_name}}&author_url={{custom_embed_url}}&title={{website_name}}" />
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <div class="image-actions">
+        <a href="{{image_direct_url}}" target="_blank" class="action-btn" title="Open original">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+        </a>
+      </div>
+      <img id="mainImage" src="{{image_direct_url}}" alt="{{image_id}}">
+    </div>
+    
+    <div class="image-info">
+      <div class="filename">{{image_id}}.png <span class="file-size">({{file_size}})</span></div>
+      <div class="upload-info">
+        Uploaded at <span class="upload-date">{{upload_date}}</span> by <span class="uploader">{{author_name}}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░░ -->
+  <!-- ░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░ -->
+  <!-- ░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░ -->
+  <!-- ░░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░░█░░ -->
+  <!-- ░▄▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░░█░ -->
+  <!-- █░▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒░█ -->
+  <!-- █░▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█ -->
+  <!-- ░█░▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█░ -->
+  <!-- ░░█░░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█░░ -->
+  <!-- ░░░█░░░░██░░▀█▄▄▄▄▄▄▄█▄███░█░░░ -->
+  <!-- ░░░░█░░░░▀▀▄░█░░░█░█▀██████░█░░ -->
+  <!-- ░░░░░▀▄░░░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█░░ -->
+  <!-- ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░ -->
+  <!-- ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░ -->
+  <!-- ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░▄█░░ -->
+  <script src="static/javascript/scripting.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 90vw;
+    max-height: 90vh;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.image-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.action-btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.action-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+#mainImage {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-info {
+    margin-top: 15px;
+}
+
+.filename {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.file-size {
+    color: #999999;
+    font-weight: normal;
+}
+
+.upload-info {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+.upload-date {
+    color: #ffffff;
+}
+
+.uploader {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95vw;
+        padding: 10px;
+    }
+    
+    .image-container {
+        padding: 15px;
+    }
+    
+    .image-actions {
+        top: 5px;
+        right: 5px;
+    }
+    
+    .filename {
+        font-size: 14px;
+    }
+    
+    .upload-info {
+        font-size: 12px;
+    }
+}
